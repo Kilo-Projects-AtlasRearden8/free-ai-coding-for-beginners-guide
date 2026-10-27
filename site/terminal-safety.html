@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5. Terminal Safety — Free AI Coding for Beginners</title>
+<meta name="description" content="Run terminal commands safely. Never curl | bash, avoid sudo with unfamiliar scripts, protect your secrets.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-title" href="index.html">Free AI Coding for Beginners</a>
+    <p class="site-desc">Published by Asdale Dynamics, LLC &middot; Indiana, formed October 2026</p>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">1. VS Code + Kilo Code</a></li>
+    <li><a href="free-models.html">2. Free Models, No Account</a></li>
+    <li><a href="reading-ai-code.html">3. Reading AI-Written Code</a></li>
+    <li><a href="fixing-errors.html">4. Fixing Errors</a></li>
+    <li><a href="terminal-safety.html" class="current">5. Terminal Safety</a></li>
+    <li><a href="when-to-ask-human.html">6. When to Ask a Human</a></li>
+    <li><a href="first-project.html">7. First-Project Walkthrough</a></li>
+    <li><a href="glossary.html">8. Glossary</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+  <aside class="sidebar">
+    <h2>Chapters</h2>
+    <ul class="chapter-list">
+      <li><a href="index.html">Home &mdash; welcome</a></li>
+      <li><a href="getting-started.html">1. VS Code + Kilo Code</a></li>
+      <li><a href="free-models.html">2. Free Models, No Account</a></li>
+      <li><a href="reading-ai-code.html">3. Reading AI-Written Code</a></li>
+      <li><a href="fixing-errors.html">4. Fixing Errors</a></li>
+      <li><a href="terminal-safety.html" class="current">5. Terminal Safety</a></li>
+      <li><a href="when-to-ask-human.html">6. When to Ask a Human</a></li>
+      <li><a href="first-project.html">7. First-Project Walkthrough</a></li>
+      <li><a href="glossary.html">8. Glossary</a></li>
+    </ul>
+  </aside>
+
+  <div class="content">
+    <article>
+      <p class="eyebrow">Chapter 5</p>
+      <h1>Terminal Safety</h1>
+      <p>The terminal (also called the command line, console, or shell) lets you control your computer by typing commands. AI can suggest terminal commands, which is powerful &mdash; and potentially dangerous. This chapter keeps you safe.</p>
+
+      <p class="note warn"><strong>The golden rule:</strong> Never run a terminal command unless you understand what it does, or you trust the source and have read the chapter on reading AI-written code. If you're not sure, ask the AI to explain the command first, or skip it.</p>
+
+      <h2>Commands that are usually safe</h2>
+      <p>These are fine for beginners:</p>
+      <ul>
+        <li><code>pwd</code> &mdash; show where you are</li>
+        <li><code>ls</code> (Mac/Linux) or <code>dir</code> (Windows) &mdash; list files in the current folder</li>
+        <li><code>cd folder-name</code> &mdash; change into a folder</li>
+        <li><code>python file.py</code> &mdash; run a Python program</li>
+        <li><code>ollama run model-name</code> &mdash; run a local AI model</li>
+        <li><code>mkdir folder-name</code> &mdash; create a new folder</li>
+      </ul>
+
+      <h2>Commands to be careful with</h2>
+      <table>
+        <thead>
+          <tr><th>Command</th><th>Why to be careful</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>sudo ...</code></td><td>Runs as administrator. Can change or delete anything.</td></tr>
+          <tr><td><code>rm</code> / <code>del</code></td><td>Deletes files. Deleted files usually don't go to a trash bin.</td></tr>
+          <tr><td><code>rm -rf</code> / <code>del /s /q</code></td><td>Deletes folders and everything inside, permanently.</td></tr>
+          <tr><td><code>chmod</code> / <code>chown</code></td><td>Changes who can read or run files.</td></tr>
+          <tr><td><code>curl ... | bash</code></td><td>Downloads a script from the internet and runs it immediately. <strong>Never do this.</strong></td></tr>
+        </tbody>
+      </table>
+
+      <h2>The one command to never run</h2>
+      <pre><code>curl https://example.com/something.sh | bash</code></pre>
+      <p>or any version of "download and run immediately." This hands control of your computer to whoever runs that website. If a tutorial tells you to do this, find a different tutorial. Download the file, read it, then decide whether to run it.</p>
+
+      <h2>If Kilo Code suggests a command</h2>
+      <p>Kilo Code may offer to run terminal commands for you. You should:</p>
+      <ol>
+        <li>See the command it plans to run.</li>
+        <li>Ask it to explain anything you don't understand.</li>
+        <li>Approve only commands that make sense for what you're doing.</li>
+        <li>Say no to anything involving <code>sudo</code>, <code>rm</code>, <code>curl | bash</code>, or passwords.</li>
+      </ol>
+      <p>You are always allowed to say no and do the step yourself.</p>
+
+      <h2>Protect your secrets</h2>
+      <p>Never type or paste these into the terminal or into an AI chat:</p>
+      <ul>
+        <li>Passwords</li>
+        <li>API keys or secret keys</li>
+        <li>Credit card numbers</li>
+        <li>Personal data (addresses, phone numbers, ID numbers)</li>
+      </ul>
+      <p>If you accidentally paste a secret, treat it as compromised: change the password or revoke the key immediately.</p>
+
+      <h2>What to do if you run something bad</h2>
+      <ol>
+        <li>Don't panic.</li>
+        <li>Press <code>Ctrl+C</code> to stop a running command.</li>
+        <li>Close the terminal tab if needed.</li>
+        <li>If you think you deleted something or changed something important, don't keep running commands &mdash; ask someone more experienced for help.</li>
+      </ol>
+
+      <h2>Exercise</h2>
+      <ol>
+        <li>Open a terminal in VS Code (<strong>Terminal &gt; New Terminal</strong>).</li>
+        <li>Type <code>pwd</code> and press Enter. See where you are.</li>
+        <li>Type <code>ls</code> and press Enter. See your files.</li>
+        <li>Create a practice folder: <code>mkdir practice-folder</code>.</li>
+        <li>Go inside: <code>cd practice-folder</code>.</li>
+        <li>Go back: <code>cd ..</code>.</li>
+      </ol>
+      <p>You just used the terminal safely.</p>
+    </article>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>&copy; 2026 Asdale Dynamics, LLC. MIT License.</p>
+    <p>Beginner-friendly AI education, books, and practical tools.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4. Fixing Errors — Free AI Coding for Beginners</title>
+<meta name="description" content="How to fix errors in AI-written code: read error messages, ask the AI for a fix, test again.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-title" href="index.html">Free AI Coding for Beginners</a>
+    <p class="site-desc">Published by Asdale Dynamics, LLC &middot; Indiana, formed October 2026</p>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">1. VS Code + Kilo Code</a></li>
+    <li><a href="free-models.html">2. Free Models, No Account</a></li>
+    <li><a href="reading-ai-code.html">3. Reading AI-Written Code</a></li>
+    <li><a href="fixing-errors.html" class="current">4. Fixing Errors</a></li>
+    <li><a href="terminal-safety.html">5. Terminal Safety</a></li>
+    <li><a href="when-to-ask-human.html">6. When to Ask a Human</a></li>
+    <li><a href="first-project.html">7. First-Project Walkthrough</a></li>
+    <li><a href="glossary.html">8. Glossary</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+  <aside class="sidebar">
+    <h2>Chapters</h2>
+    <ul class="chapter-list">
+      <li><a href="index.html">Home &mdash; welcome</a></li>
+      <li><a href="getting-started.html">1. VS Code + Kilo Code</a></li>
+      <li><a href="free-models.html">2. Free Models, No Account</a></li>
+      <li><a href="reading-ai-code.html">3. Reading AI-Written Code</a></li>
+      <li><a href="fixing-errors.html" class="current">4. Fixing Errors</a></li>
+      <li><a href="terminal-safety.html">5. Terminal Safety</a></li>
+      <li><a href="when-to-ask-human.html">6. When to Ask a Human</a></li>
+      <li><a href="first-project.html">7. First-Project Walkthrough</a></li>
+      <li><a href="glossary.html">8. Glossary</a></li>
+    </ul>
+  </aside>
+
+  <div class="content">
+    <article>
+      <p class="eyebrow">Chapter 4</p>
+      <h1>Fixing Errors</h1>
+      <p>AI-written code often has errors on the first try. That's normal. Professional programmers spend more time fixing code than writing it. This chapter shows you how to fix errors calmly and safely.</p>
+
+      <h2>Step 1: Read the error message</h2>
+      <p>When something breaks, you'll see an error message in the terminal or in VS Code. It looks scary, but it's trying to help. Read it slowly. Look for:</p>
+      <ul>
+        <li>The file name where the problem is</li>
+        <li>The line number</li>
+        <li>A short description of what went wrong</li>
+      </ul>
+      <p>Example:</p>
+      <pre><code>File "budget.py", line 4, in &lt;module&gt;
+    print(total)
+NameError: name 'total' is not defined</code></pre>
+      <p>Translation: in <code>budget.py</code>, on line 4, the program tried to use <code>total</code> but <code>total</code> was never created.</p>
+
+      <h2>Step 2: Copy the error into the AI chat</h2>
+      <p>Paste the full error message into Kilo Code, along with the code that caused it. Ask:</p>
+      <blockquote>
+        <p>"This code gave me this error. Can you fix it and explain what went wrong?"</p>
+      </blockquote>
+      <p>Include:</p>
+      <ul>
+        <li>The error message (copy and paste, don't retype)</li>
+        <li>The file it happened in</li>
+        <li>What you were trying to do</li>
+      </ul>
+
+      <h2>Step 3: Apply the fix carefully</h2>
+      <p>Kilo Code will suggest a corrected version. Before you replace your code:</p>
+      <ol>
+        <li>Read the suggested change.</li>
+        <li>Make sure you understand what it changes and why.</li>
+        <li>If anything looks wrong or dangerous, ask the AI to explain or suggest another fix.</li>
+      </ol>
+      <p>You can copy the fix into your file, or ask Kilo Code to apply it directly (review it first either way).</p>
+
+      <h2>Step 4: Test again</h2>
+      <p>Run the program again:</p>
+      <pre><code>python your-file.py</code></pre>
+      <p>or open your HTML file in a browser. Did the error go away?</p>
+      <ul>
+        <li><strong>Yes:</strong> Great. Read the fixed code so you understand it now.</li>
+        <li><strong>No, same error:</strong> Paste the new error and try again.</li>
+        <li><strong>No, different error:</strong> Progress! You fixed one thing and found the next. Repeat.</li>
+      </ul>
+
+      <h2>Step 5: Don't guess &mdash; verify</h2>
+      <p>After the error is gone, test that the program actually does what you want:</p>
+      <ul>
+        <li>Try different inputs (big numbers, zero, negative numbers, empty text).</li>
+        <li>Check that the output matches what you expect.</li>
+      </ul>
+      <p>AI can write code that runs without errors but still does the wrong thing. Testing catches that.</p>
+
+      <h2>Common beginner errors</h2>
+      <table>
+        <thead>
+          <tr><th>Error</th><th>Likely cause</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>NameError</code> / "not defined"</td><td>You used a name before creating it, or misspelled it</td></tr>
+          <tr><td><code>SyntaxError</code></td><td>A typo like a missing parenthesis, quote, or colon</td></tr>
+          <tr><td><code>FileNotFoundError</code></td><td>The program looked for a file that isn't there</td></tr>
+          <tr><td><code>TypeError</code></td><td>You tried to do something with the wrong kind of data (e.g., adding text to a number)</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Keep a safety net</h2>
+      <p>Before you let AI make big changes, save a copy of your file or make a git commit (see the glossary). If the AI's fix makes things worse, you can go back to the version that worked.</p>
+
+      <h2>Exercise</h2>
+      <ol>
+        <li>Intentionally break a working program &mdash; delete a line or misspell a word.</li>
+        <li>Run it and read the error.</li>
+        <li>Ask Kilo Code to fix it.</li>
+        <li>Apply the fix and test.</li>
+      </ol>
+      <p>You just debugged like a pro.</p>
+    </article>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>&copy; 2026 Asdale Dynamics, LLC. MIT License.</p>
+    <p>Beginner-friendly AI education, books, and practical tools.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7. First-Project Walkthrough — Free AI Coding for Beginners</title>
+<meta name="description" content="Build your first AI-assisted project: a budget note card webpage, step by step, with VS Code and Kilo Code.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-title" href="index.html">Free AI Coding for Beginners</a>
+    <p class="site-desc">Published by Asdale Dynamics, LLC &middot; Indiana, formed October 2026</p>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">1. VS Code + Kilo Code</a></li>
+    <li><a href="free-models.html">2. Free Models, No Account</a></li>
+    <li><a href="reading-ai-code.html">3. Reading AI-Written Code</a></li>
+    <li><a href="fixing-errors.html">4. Fixing Errors</a></li>
+    <li><a href="terminal-safety.html">5. Terminal Safety</a></li>
+    <li><a href="when-to-ask-human.html">6. When to Ask a Human</a></li>
+    <li><a href="first-project.html" class="current">7. First-Project Walkthrough</a></li>
+    <li><a href="glossary.html">8. Glossary</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+  <aside class="sidebar">
+    <h2>Chapters</h2>
+    <ul class="chapter-list">
+      <li><a href="index.html">Home &mdash; welcome</a></li>
+      <li><a href="getting-started.html">1. VS Code + Kilo Code</a></li>
+      <li><a href="free-models.html">2. Free Models, No Account</a></li>
+      <li><a href="reading-ai-code.html">3. Reading AI-Written Code</a></li>
+      <li><a href="fixing-errors.html">4. Fixing Errors</a></li>
+      <li><a href="terminal-safety.html">5. Terminal Safety</a></li>
+      <li><a href="when-to-ask-human.html">6. When to Ask a Human</a></li>
+      <li><a href="first-project.html" class="current">7. First-Project Walkthrough</a></li>
+      <li><a href="glossary.html">8. Glossary</a></li>
+    </ul>
+  </aside>
+
+  <div class="content">
+    <article>
+      <p class="eyebrow">Chapter 7</p>
+      <h1>First-Project Walkthrough</h1>
+      <p>Let's build something real together. We'll make a simple <strong>budget note card</strong> &mdash; a single webpage where you can type an expense and see a running total. It's free, runs in your browser, and needs no server.</p>
+      <p>This walkthrough uses VS Code, Kilo Code, and only free tools.</p>
+
+      <h2>What we're building</h2>
+      <p>A single HTML file that:</p>
+      <ul>
+        <li>Has a box to type an expense amount</li>
+        <li>A button to add it</li>
+        <li>Shows a running total</li>
+        <li>Works entirely in your browser</li>
+      </ul>
+
+      <h2>Step 1: Set up the folder</h2>
+      <ol>
+        <li>Open VS Code.</li>
+        <li>Choose <strong>File &gt; Open Folder</strong>.</li>
+        <li>Create a folder named <code>my-first-budget</code> somewhere easy (like <code>Documents</code>).</li>
+        <li>Open it.</li>
+      </ol>
+      <p>You should see an empty Explorer panel on the left.</p>
+
+      <h2>Step 2: Ask Kilo Code to create the page</h2>
+      <p>Open the Kilo Code chat panel and send this message:</p>
+      <blockquote>
+        <p>"I'm a beginner. Please create a single HTML file called index.html with a simple budget note card. It should have an input for an expense amount, an Add button, and a running total display. Use only HTML, CSS, and JavaScript in one file. Keep it simple and add comments explaining each part. Make it look clean and friendly."</p>
+      </blockquote>
+      <p>Kilo Code will suggest a file. Review it (read the chapter on reading AI-written code first if you like), then accept it or copy the code into a new file named <code>index.html</code> in your folder.</p>
+
+      <h2>Step 3: Read the code</h2>
+      <p>Open <code>index.html</code> and read it top to bottom. Look for:</p>
+      <ul>
+        <li>The input box where you type a number</li>
+        <li>The button that adds the expense</li>
+        <li>The place where the total is shown</li>
+        <li>The comments explaining each part</li>
+      </ul>
+      <p>If anything is unclear, ask Kilo Code: "Can you explain this part line by line?"</p>
+
+      <h2>Step 4: Open it in your browser</h2>
+      <p>In VS Code, right-click <code>index.html</code> in the Explorer and choose <strong>Open with Live Server</strong>, or just find the file in your file manager and double-click it. It opens in your web browser.</p>
+      <p>Try it:</p>
+      <ol>
+        <li>Type a number (like <code>12.50</code>) into the input.</li>
+        <li>Click Add.</li>
+        <li>Watch the total update.</li>
+        <li>Add another expense.</li>
+      </ol>
+      <p>It works. You built it with AI.</p>
+
+      <h2>Step 5: Intentionally break it and fix it</h2>
+      <p>Delete the line that updates the total. Save. Refresh the browser. Notice the total no longer changes. Now ask Kilo Code:</p>
+      <blockquote>
+        <p>"My budget page stopped updating the total when I add an expense. Here's the code: [paste it]. Can you fix it?"</p>
+      </blockquote>
+      <p>Apply the fix, save, refresh. It works again. You just debugged.</p>
+
+      <h2>Step 6: Make it yours</h2>
+      <p>Ask Kilo Code to add one small feature &mdash; for example, a button to clear the total, or a label showing today's date. Read the change, apply it, test it. This is how you go from following a walkthrough to making your own projects.</p>
+
+      <h2>What you just did</h2>
+      <p>You installed tools, used a free AI model, wrote code with AI, read it, ran it, broke it, fixed it, and extended it. That's the whole cycle of coding with AI.</p>
+
+      <h2>Next steps</h2>
+      <ul>
+        <li>Build another small project (a to-do list, a unit converter, a greeting card).</li>
+        <li>Read the <a href="glossary.html">glossary</a> for terms you met here.</li>
+        <li>When you're ready, share what you built with a friend or ask for feedback online (without sharing secrets).</li>
+      </ul>
+
+      <p class="note good">Congratulations &mdash; you're coding with AI.</p>
+    </article>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>&copy; 2026 Asdale Dynamics, LLC. MIT License.</p>
+    <p>Beginner-friendly AI education, books, and practical tools.</p>
+  </div>
+</footer>
+
+</body>
+</html>

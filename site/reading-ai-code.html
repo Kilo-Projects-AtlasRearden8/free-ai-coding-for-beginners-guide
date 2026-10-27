@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3. Reading AI-Written Code — Free AI Coding for Beginners</title>
+<meta name="description" content="How to read code an AI wrote, line by line, without trusting it blindly.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-title" href="index.html">Free AI Coding for Beginners</a>
+    <p class="site-desc">Published by Asdale Dynamics, LLC &middot; Indiana, formed October 2026</p>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">1. VS Code + Kilo Code</a></li>
+    <li><a href="free-models.html">2. Free Models, No Account</a></li>
+    <li><a href="reading-ai-code.html" class="current">3. Reading AI-Written Code</a></li>
+    <li><a href="fixing-errors.html">4. Fixing Errors</a></li>
+    <li><a href="terminal-safety.html">5. Terminal Safety</a></li>
+    <li><a href="when-to-ask-human.html">6. When to Ask a Human</a></li>
+    <li><a href="first-project.html">7. First-Project Walkthrough</a></li>
+    <li><a href="glossary.html">8. Glossary</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+  <aside class="sidebar">
+    <h2>Chapters</h2>
+    <ul class="chapter-list">
+      <li><a href="index.html">Home &mdash; welcome</a></li>
+      <li><a href="getting-started.html">1. VS Code + Kilo Code</a></li>
+      <li><a href="free-models.html">2. Free Models, No Account</a></li>
+      <li><a href="reading-ai-code.html" class="current">3. Reading AI-Written Code</a></li>
+      <li><a href="fixing-errors.html">4. Fixing Errors</a></li>
+      <li><a href="terminal-safety.html">5. Terminal Safety</a></li>
+      <li><a href="when-to-ask-human.html">6. When to Ask a Human</a></li>
+      <li><a href="first-project.html">7. First-Project Walkthrough</a></li>
+      <li><a href="glossary.html">8. Glossary</a></li>
+    </ul>
+  </aside>
+
+  <div class="content">
+    <article>
+      <p class="eyebrow">Chapter 3</p>
+      <h1>Reading AI-Written Code</h1>
+      <p>AI can write code fast. That doesn't mean the code is correct, safe, or easy to understand. Your job as the human is to read it before you run it. This chapter shows you how, step by step, even if you've never read code before.</p>
+
+      <p class="note warn"><strong>Rule one:</strong> never run AI code you haven't read.</p>
+      <p>An AI might write code that deletes files, sends data somewhere, or simply crashes. Read it first. If anything looks strange, ask the AI to explain it before running anything.</p>
+
+      <h2>How to read a piece of code</h2>
+      <p>Read top to bottom, one piece at a time:</p>
+      <ol>
+        <li><strong>Look at the file name.</strong> <code>budget.html</code> is probably a webpage. <code>calculator.py</code> is probably a Python program. The name tells you what to expect.</li>
+        <li><strong>Find the starting point.</strong> Code usually runs from the top (or from a function named <code>main</code>). Start there.</li>
+        <li><strong>Read line by line.</strong> Ask of each line: "What is this line doing?"</li>
+        <li><strong>Look up words you don't know.</strong> Use the glossary at the end of this guide, or ask the AI: "What does this line do?"</li>
+      </ol>
+
+      <h2>Use the AI to explain its own code</h2>
+      <p>You can paste AI-written code back into Kilo Code and ask:</p>
+      <blockquote>
+        <p>"Can you explain this code line by line, like I'm a beginner?"</p>
+      </blockquote>
+      <p>Or:</p>
+      <blockquote>
+        <p>"What does this function do? Is anything here dangerous?"</p>
+      </blockquote>
+      <p>The AI is often surprisingly good at explaining its own writing. Use it as a tutor, not just as a writer.</p>
+
+      <h2>Common things you'll meet</h2>
+      <table>
+        <thead>
+          <tr><th>What you see</th><th>What it usually means</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>function name() { ... }</code> or <code>def name():</code></td><td>A reusable block of code with a name</td></tr>
+          <tr><td><code>if ( ... ) { ... }</code> or <code>if ...:</code></td><td>"Only do this if a condition is true"</td></tr>
+          <tr><td><code>for ... { ... }</code> or <code>for ...:</code></td><td>"Do this many times, once for each item"</td></tr>
+          <tr><td><code>variable = value</code></td><td>Storing a value under a name so you can reuse it</td></tr>
+          <tr><td><code>print(...)</code> or <code>console.log(...)</code></td><td>Showing text in the terminal or browser console</td></tr>
+          <tr><td><code>// comment</code> or <code># comment</code></td><td>A note for humans; the computer ignores it</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Comments are your friend</h2>
+      <p>Good AI-written code usually has comments explaining what each section does. If the AI didn't add comments, ask it to:</p>
+      <blockquote>
+        <p>"Please add comments explaining what each part does."</p>
+      </blockquote>
+      <p>Then read those comments as you read the code.</p>
+
+      <h2>Small programs are easier to read</h2>
+      <p>Ask the AI to write small, single-purpose files rather than one giant file. A 20-line calculator is easier to check than a 500-line "app." You can combine small files later.</p>
+
+      <h2>Exercise</h2>
+      <p>Ask Kilo Code to write a tiny program &mdash; for example, a program that converts Fahrenheit to Celsius. Then:</p>
+      <ol>
+        <li>Read every line.</li>
+        <li>Ask Kilo Code to explain any line you don't understand.</li>
+        <li>Predict what the program will output before you run it.</li>
+        <li>Run it and compare.</li>
+      </ol>
+      <p>If the output doesn't match your prediction, you found something worth learning from. Move on to the next chapter to fix it.</p>
+    </article>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>&copy; 2026 Asdale Dynamics, LLC. MIT License.</p>
+    <p>Beginner-friendly AI education, books, and practical tools.</p>
+  </div>
+</footer>
+
+</body>
+</html>

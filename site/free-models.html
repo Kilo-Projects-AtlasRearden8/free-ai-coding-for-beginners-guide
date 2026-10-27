@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2. Free Models, No Account — Free AI Coding for Beginners</title>
+<meta name="description" content="AI models that are free and need no signup: Ollama local models, no-account web chat, and optional free tiers.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-title" href="index.html">Free AI Coding for Beginners</a>
+    <p class="site-desc">Published by Asdale Dynamics, LLC &middot; Indiana, formed October 2026</p>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="getting-started.html">1. VS Code + Kilo Code</a></li>
+    <li><a href="free-models.html" class="current">2. Free Models, No Account</a></li>
+    <li><a href="reading-ai-code.html">3. Reading AI-Written Code</a></li>
+    <li><a href="fixing-errors.html">4. Fixing Errors</a></li>
+    <li><a href="terminal-safety.html">5. Terminal Safety</a></li>
+    <li><a href="when-to-ask-human.html">6. When to Ask a Human</a></li>
+    <li><a href="first-project.html">7. First-Project Walkthrough</a></li>
+    <li><a href="glossary.html">8. Glossary</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+  <aside class="sidebar">
+    <h2>Chapters</h2>
+    <ul class="chapter-list">
+      <li><a href="index.html">Home &mdash; welcome</a></li>
+      <li><a href="getting-started.html">1. VS Code + Kilo Code</a></li>
+      <li><a href="free-models.html" class="current">2. Free Models, No Account</a></li>
+      <li><a href="reading-ai-code.html">3. Reading AI-Written Code</a></li>
+      <li><a href="fixing-errors.html">4. Fixing Errors</a></li>
+      <li><a href="terminal-safety.html">5. Terminal Safety</a></li>
+      <li><a href="when-to-ask-human.html">6. When to Ask a Human</a></li>
+      <li><a href="first-project.html">7. First-Project Walkthrough</a></li>
+      <li><a href="glossary.html">8. Glossary</a></li>
+    </ul>
+  </aside>
+
+  <div class="content">
+    <article>
+      <p class="eyebrow">Chapter 2</p>
+      <h1>Free Models, No Account</h1>
+      <p>You do not have to pay for AI, and you do not have to create an account with an AI company, to use AI for coding. This chapter shows you the options that are free and need no signup.</p>
+
+      <h2>Option 1: Local models with Ollama (recommended, private, and free)</h2>
+      <p><strong>Ollama</strong> lets you run AI models on your own computer. Nothing you type is sent to a company's servers. It works offline after you download a model. It is completely free.</p>
+      <ol>
+        <li>Go to <code>ollama.com</code> and download Ollama for your computer.</li>
+        <li>Install it and open it. It runs quietly in the background.</li>
+        <li>In your terminal, run a model. For example:</li>
+      </ol>
+      <pre><code>ollama run codellama</code></pre>
+      <p>The first time, Ollama downloads the model (this can take a few minutes depending on your internet speed). After that, it's on your machine.</p>
+      <p>Type your question and press Enter. Type <code>/bye</code> to exit.</p>
+      <p>To use a local model with Kilo Code in VS Code, look for a "local model" or "Ollama" option in Kilo Code's settings and point it at <code>http://localhost:11434</code>.</p>
+      <p><strong>Why local-first?</strong> Your code stays on your computer. No account. No API keys. No subscription. This matches Asdale Dynamics' local-first, private approach.</p>
+
+      <h2>Option 2: Free web chat with no account</h2>
+      <p>Some AI providers let you chat with a model in your browser without creating an account. Availability changes, so search for "free AI chat no account" and try a few. Look for:</p>
+      <ul>
+        <li>No "Sign up" wall before you can type</li>
+        <li>No request for a phone number or credit card</li>
+        <li>A clear privacy statement</li>
+      </ul>
+      <p>You can paste code into these chats and ask the AI to explain it or fix it, then copy the result back into VS Code. Just don't paste secrets (passwords, API keys, personal data) &mdash; see the terminal safety chapter for why.</p>
+
+      <h2>Option 3: Free tiers with an account (optional)</h2>
+      <p>Many AI tools have a generous free tier, but they ask you to create an account. You don't need these for this guide. If you ever choose to sign up, never add a credit card unless you intend to pay, and check the pricing page so you don't get surprised by a bill.</p>
+
+      <h2>What models are good for coding</h2>
+      <p>When you have a choice, pick a model described as good at code &mdash; names you may see include Code Llama, DeepSeek Coder, Qwen, or similar. Any of them can help a beginner. The exact model matters less than just getting started.</p>
+
+      <h2>A quick no-account test</h2>
+      <p>Try this right now:</p>
+      <ol>
+        <li>Open Ollama (or a no-account web chat).</li>
+        <li>Ask: "Write a short Python program that prints the numbers 1 to 5."</li>
+        <li>Copy the code into a file called <code>test.py</code> in VS Code.</li>
+        <li>Run it in the terminal:</li>
+      </ol>
+      <pre><code>python test.py</code></pre>
+      <p>You just coded with AI for free.</p>
+
+      <p class="note warn">Even free AI can make mistakes. Always read the code before you run it (next chapter), and never run a terminal command you don't understand (terminal safety chapter). Free doesn't mean careless.</p>
+    </article>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>&copy; 2026 Asdale Dynamics, LLC. MIT License.</p>
+    <p>Beginner-friendly AI education, books, and practical tools.</p>
+  </div>
+</footer>
+
+</body>
+</html>
